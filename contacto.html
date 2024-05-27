@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="styleContacto.css">
+</head>
+<body>
+    <section class="contact">
+        <h2>¡Contáctanos!</h2>
+        <form action="#">
+            <div class="input-box">
+                <div class="input-field field">
+                    <input type="text" placeholder="Nombre Completo" id = "name" class="item" autocomplete="off">
+                    <div class="error-txt">Debes responder este espacio.</div>
+                </div>
+                <div class="input-field field">
+                    <input type="text" placeholder="Dirección Email" id = "email" class="item" autocomplete="off">
+                    <div class="error-txt email">Debes responder este espacio.</div>
+                </div>
+            </div>
+
+            <div class="input-box">
+                <div class="input-field field">
+                    <input type="text" placeholder="Número de teléfono" id = "phone" class="item" autocomplete="off">
+                    <div class="error-txt">Debes responder este espacio.</div>
+                </div>
+                <div class="input-field field">
+                    <input type="text" placeholder="Asunto" id = "subject" class="item" autocomplete="off">
+                    <div class="error-txt">Debes responder este espacio.</div>
+                </div>
+            </div>
+
+            <div class="textarea-field field">
+                <textarea name="" id="message" cols="30" rows="10" placeholder="Tu mensaje:" class="item" autocomplete="off"></textarea>
+                <div class="error-txt">Debes agregar un mensaje.</div>
+            </div>
+
+            <button type="submit">Enviar mensaje</button>
+            
+            <button type="button" id="backButton">Regresar</button>
+        </form>
+    </section>
+
+    <footer>
+        © 2024 La Trivia del 37. Todos los derechos reservados.
+        <span id="dateTime"></span>
+    </footer>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="contacto.js"></script>
+    
+</body>
+</html>
